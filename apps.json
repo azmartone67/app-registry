@@ -506,5 +506,55 @@
       }
     ],
     "setup": []
+  },
+  {
+    "name": "DC Hub",
+    "description": "Live electricity, power-grid and data-center intelligence. Real-time grid telemetry from 7 independent feeds across 49 regions and operators, 18,800+ data-center facilities in 170+ countries, 300+ scored markets, plus substations, transmission lines, gas pipelines and fiber routes. Every figure is citable and stamped with an as_of date.",
+    "icon": {
+      "type": "url",
+      "url": {
+        "light": "https://raw.githubusercontent.com/fleuristes/app-registry/main/assets/dchub.svg",
+        "dark": "https://raw.githubusercontent.com/fleuristes/app-registry/main/assets/dchub.svg"
+      }
+    },
+    "category": "Utilities",
+    "price": "Free tier available",
+    "developer": "DC Hub",
+    "sourceUrl": "https://github.com/azmartone67/dchub-mcp-server",
+    "config": {
+      "mcpKey": "dchub",
+      "runtime": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://dchub.cloud/mcp?via=fleur&apiKey=${DCHUB_API_KEY}"
+      ]
+    },
+    "features": [
+      {
+        "name": "Live grid conditions",
+        "description": "Real-time fuel mix, renewable share and demand for any ISO or balancing authority",
+        "prompt": "What is ERCOT's current fuel mix and renewable share right now?"
+      },
+      {
+        "name": "Data-center site selection",
+        "description": "Rank and compare candidate sites on power availability, fiber and risk",
+        "prompt": "Rank the best US markets for a 200MW data center with strong fiber and low water risk"
+      },
+      {
+        "name": "Facility and market intelligence",
+        "description": "Look up any data center, its tenants and its market's DC Hub Power Index score",
+        "prompt": "Compare Phoenix and Ashburn as data center markets, and cite your sources"
+      }
+    ],
+    "setup": [
+      {
+        "label": "DC Hub API key (optional)",
+        "type": "input",
+        "placeholder": "Leave blank to use the free tier",
+        "value": "",
+        "key": "DCHUB_API_KEY"
+      }
+    ]
   }
 ]
