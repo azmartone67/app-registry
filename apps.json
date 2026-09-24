@@ -509,7 +509,7 @@
   },
   {
     "name": "DC Hub",
-    "description": "Live electricity, power-grid and data-center intelligence. Real-time grid telemetry from 7 independent feeds across 49 regions and operators, 18,800+ data-center facilities in 170+ countries, 300+ scored markets, plus substations, transmission lines, gas pipelines and fiber routes. Every figure is citable and stamped with an as_of date.",
+    "description": "Live electricity, power-grid and data-center intelligence. Real-time grid telemetry from 7 independent feeds across 49 regions and operators, 24,500+ data-center facilities in 170+ countries, 300+ scored markets, plus substations, transmission lines, gas pipelines and fiber routes. Every figure is citable and stamped with an as_of date.",
     "icon": {
       "type": "url",
       "url": {
